@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import * as bootstrap from "bootstrap";
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
 import "@fontsource/ubuntu-sans/400.css";
 import "@fontsource/ubuntu-sans/400-italic.css";

@@ -4,6 +4,8 @@
 $header-font: "Inter", Arial, sans-serif;
 $text-font: "Ubuntu Sans", "Roboto", Arial, sans-serif;
 
+$base-item-size: 6rem;
+
 :root {
 	font-size: 20px;
 }
@@ -22,6 +24,24 @@ p,
 sub,
 sup,
 a,
-span {
+span,
+li {
 	font-family: $text-font;
+}
+
+.pokemon-list-item {
+	cursor: pointer;
+	user-select: none;
+
+	&.sm {
+		width: $base-item-size * 1.5;
+	}
+
+	&.md {
+		width: $base-item-size * 2;
+	}
+
+	&.lg {
+		width: $base-item-size * 3;
+	}
 }
