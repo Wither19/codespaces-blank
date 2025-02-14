@@ -1,7 +1,6 @@
 import "./scss/App.scss";
 
-import PokedexList from "./components/PokedexList";
-import PokemonMenu from "./components/PokemonMenu";
+import PokedexApp from "./components/PokedexApp";
 
 import { useContext, useEffect, useState } from "react";
 
@@ -16,8 +15,7 @@ function App() {
 					</div>
 					<div className="col-4"></div>
 				</div>
-				<PokedexList />
-				<PokemonMenu />
+				<PokedexApp />
 			</div>
 		</>
 	);
