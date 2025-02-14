@@ -12,7 +12,7 @@ function App() {
 				<div className="row">
 					<div className="col-4"></div>
 					<div className="col-4 d-flex justify-content-center">
-						<h1 className="pokedex-title">Pokédex</h1>
+						<div className="display-3 pokedex-title">Pokédex</div>
 					</div>
 					<div className="col-4"></div>
 				</div>
