@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import bootstrap from "bootstrap";
+import * as bootstrap from "bootstrap";
 
 import "@fontsource/ubuntu-sans/400.css";
 import "@fontsource/ubuntu-sans/400-italic.css";
