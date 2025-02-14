@@ -1,5 +1,9 @@
-import { useState } from "react";
 import "./scss/App.scss";
+
+import PokedexList from "./components/PokedexList";
+import PokemonMenu from "./components/PokemonMenu";
+
+import { useContext, useEffect, useState } from "react";
 
 import "@fontsource/ubuntu-sans/400.css";
 import "@fontsource/ubuntu-sans/400-italic.css";
