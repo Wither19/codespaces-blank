@@ -153,7 +153,7 @@ function PokedexApp() {
 							<div
 								className={`${
 									listSize == "sm"
-										? "col-2"
+										? "col-1"
 										: listSize == "md"
 										? "col-2"
 										: "col-3"

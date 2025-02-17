@@ -34,7 +34,8 @@ li {
 	user-select: none;
 
 	&.sm {
-		width: $base-item-size * 1.5;
+		width: $base-item-size;
+		font-size: 0.6rem;
 	}
 
 	&.md {
