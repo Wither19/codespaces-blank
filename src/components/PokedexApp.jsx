@@ -4,6 +4,8 @@ import { useEffect, useState, useContext } from "react";
 
 import axios from "axios";
 
+import _ from "lodash";
+
 import PokemonMenu from "./PokemonMenu";
 import { start } from "@popperjs/core";
 
@@ -54,6 +56,8 @@ function PokedexApp() {
 	const [regionDropdown, setRegionDropdown] = useState("");
 	const [searchText, setSearchText] = useState("");
 	const [listSize, setListSize] = useState("md");
+	const [sortType, setSortType] = useState("dex");
+	const [sortOrder, setSortOrder] = useState("asc");
 
 	return (
 		<>
@@ -108,6 +112,25 @@ function PokedexApp() {
 							<option value="md">Medium</option>
 							<option value="lg">Large</option>
 						</select>
+					</div>
+					<div className="mb-4 col-3">
+						<label htmlFor="regionSelect">List View</label>
+						<select
+							className="form-control"
+							id="regionSelect"
+							value={listSize}
+							onChange={(e) => {
+								setListSize(e.target.value);
+							}}>
+							<option value="sm">Small</option>
+							<option value="md">Medium</option>
+							<option value="lg">Large</option>
+						</select>
+					</div>
+					<div className="col-1 my-4 mx-0">
+						<button type="button" className="btn btn-outline-secondary">
+							<i className="bi bi-sort-alpha-down"></i>
+						</button>
 					</div>
 				</div>
 				<div className="pokemon-list d-flex flex-wrap justify-content-evenly">
